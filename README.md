@@ -1,5 +1,5 @@
 <h1 align="center">ALX Higher-Level Programming</h1>
-This repository stores my solutions to the amazing high-level programming projects I did at the Holberton Campus, most projects are written in Python programming language, but some projects contain something in C.
+This repository stores my solutions to the amazing high-level programming projects I did at the ALX Campus, most projects are written in Python programming language, but some projects contain something in C.
 
 ---
 
