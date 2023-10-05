@@ -12,6 +12,9 @@ if __name__ == '__main__':
                 print("Unknown operator. Available operators: +, -, * and /")
                 exit(1)
 
+        a = int(sys.argv[1])
+        op = sys.argv[2]
+        b = int(sys.argv[3])
         if sys.argv[2] == '+':
             operation = add
         elif sys.argv[2] == '-':
@@ -21,9 +24,5 @@ if __name__ == '__main__':
         else:
             operation = div
 
-        print("{} {} {} = {}".format(
-    int(sys.argv[1]),
-    sys.argv[2],
-    int(sys.argv[3]),
-    operation(int(sys.argv[1]), int(sys.argv[3]))
-))
+        print("{} {} {}".format(a, op, b), end=" = ")
+        print("{}".format(operation(a, b)))
