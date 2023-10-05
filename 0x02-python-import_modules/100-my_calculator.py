@@ -21,7 +21,9 @@ if __name__ == '__main__':
         else:
             operation = div
 
-        print("{} {} {} = {}".format(int(sys.argv[1]), sys.argv[2],
-                                      int(sys.argv[3]),
-                                     operation(int(sys.argv[1]),
-                                                int(sys.argv[3]))))
+        print("{} {} {} = {}".format(
+    int(sys.argv[1]),
+    sys.argv[2],
+    int(sys.argv[3]),
+    operation(int(sys.argv[1]), int(sys.argv[3]))
+))
