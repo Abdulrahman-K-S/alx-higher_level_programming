@@ -19,7 +19,11 @@
     - [12. Compile](#12-compile)
     - [13. ByteCode -> Python #1](#13-bytecode---python-1)
 
+<br>
+
 ![image](https://github.com/Bebo-K-S/alx-higher_level_programming/assets/107813045/c19830be-749d-4f14-8203-0e72aeaaf223)
+
+<br>
 
 # Author’s disclaimer
 ```
