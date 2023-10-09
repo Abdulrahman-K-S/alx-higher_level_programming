@@ -4,23 +4,23 @@
 #include <stdio.h>
 
 /**
- * print_python_list_info - A function that prints the python enviorment
+ * printListInfo - A function that prints the python enviorment
  *
  * @p: The enviorment
 */
-void print_python_list_info(PyObject *p)
-{
-	int i = 0, list_len = 0;
-	PyObject *item;
-	PyListObject *clone = (PyListObject *) p;
+void printListInfo(PyObject* list) {
+    if (PyList_Check(list)) {
+        Py_ssize_t size = PyList_Size(list);
+        printf("List Size: %zd\n", size);
 
-	list_len = Py_SIZE(p);
-	printf("[*] Size of the Python List = %d\n", list_len);
-	printf("[*] Allocated = %d\n", (int) clone->allocated);
-
-	for (; i < list_len; ++i)
-	{
-		item = PyList_GET_ITEM(p, i);
-		printf("Element %d: %s\n", i, item->ob_type->tp_name);
-	}
+        for (Py_ssize_t i = 0; i < size; i++) {
+            PyObject* item = PyList_GetItem(list, i);
+            PyObject* itemStr = PyObject_Str(item);
+            char* itemChars = PyUnicode_AsUTF8(itemStr);
+            printf("Item %zd: %s\n", i, itemChars);
+            Py_XDECREF(itemStr);
+        }
+    } else {
+        printf("The object is not a list.\n");
+    }
 }
