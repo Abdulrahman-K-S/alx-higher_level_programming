@@ -9,10 +9,12 @@ def roman_to_int(roman_string):
     for i in roman_string:
         if i == "I":
             roman_int += 1
-        elif i == "V":
+        elif roman_string[i] == "V" and roman_string[i - 1] == "I":
+            roman_int += 5 - 2
+        elif roman_string[i] == "V":
             roman_int += 5
-        elif i == "X":
-            roman_int += 10
+        elif roman_string[i] == "X" and roman_string[i - 1] == "I":
+            roman_int += 10 - 2
         elif i == "L":
             roman_int += 50
         elif i == "C":
