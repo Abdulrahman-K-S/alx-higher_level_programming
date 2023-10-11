@@ -5,23 +5,20 @@ def roman_to_int(roman_string):
     if type(roman_string) is not str or roman_string is None:
         return None
 
-    roman_int = 0
-    for i in roman_string:
-        if i == "I":
-            roman_int += 1
-        elif roman_string[i] == "V" and roman_string[i - 1] == "I":
-            roman_int += 5 - 2
-        elif roman_string[i] == "V":
-            roman_int += 5
-        elif roman_string[i] == "X" and roman_string[i - 1] == "I":
-            roman_int += 10 - 2
-        elif i == "L":
-            roman_int += 50
-        elif i == "C":
-            roman_int += 100
-        elif i == "D":
-            roman_int += 500
-        elif i == "M":
-            roman_int += 1000
+    roman_values = {
+        'I': 1, 'V': 5, 'X': 10,
+        'L': 50, 'C': 100,
+        'D': 500, 'M': 1000
+    }
+    result = 0
+    prev_value = 0
 
-    return roman_int
+    for c in roman_string[::-1]:
+        current_value = roman_values[c]
+        if current_value >= prev_value:
+            result += current_value
+        else:
+            result -= current_value
+        prev_value = current_value
+
+    return result
