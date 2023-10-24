@@ -4,8 +4,10 @@
 A square class
 
 """
+
+
 class Sqaure:
-    
+
     def __init__(self, size):
         """__init__
 
