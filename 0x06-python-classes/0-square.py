@@ -1,8 +1,10 @@
 #!/usr/bin/python3
-"""Square class
+"""Square Class
 
-At the moment this class doesn't do anything
+This class don't do anything for the moment
 
 """
-class Sqaure:
+
+
+class Square:
     pass
