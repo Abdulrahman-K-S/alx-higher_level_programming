@@ -1,17 +1,17 @@
 #!/usr/bin/python3
-"""Square class
+"""Square Class
 
-A square class
+A Square Class
 
 """
 
 
-class Sqaure:
+class Square:
 
     def __init__(self, size):
         """__init__
 
-        The __init__ methon initalizes the size value
+        The __init__ method initializes the size value
         of the square.
 
         Attributes:
