@@ -21,8 +21,8 @@ class Square:
             size (int): The size of the square.
  
         Raises:
-            TypeError: If the size is not an integer
-            ValueError: If the size is less than 0
+            TypeError: If the `size` is not an `int`
+            ValueError: If the `size` is less than `0`
         """
 
         if type(size) is not int:
