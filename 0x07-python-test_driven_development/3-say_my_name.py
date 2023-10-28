@@ -1,4 +1,4 @@
-# #!/usr/bin/python3
+#!/usr/bin/python3
 """A module that prints `My name is <first name> <last name>`
 
 This module prints a promt `My name is <first name> <last name>`
