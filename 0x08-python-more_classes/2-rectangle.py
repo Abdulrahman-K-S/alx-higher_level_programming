@@ -1,8 +1,7 @@
 #!/usr/bin/python3
-"""01. Real definition of a rectangle
+"""2. Area and Perimeter
 
-This module defines a class Rectangle that has private
-width & height attributes
+This module defines a class Rectangle
 
 """
 
