@@ -56,7 +56,7 @@ class Rectangle:
         if self.__height == 0 or self.__width == 0:
             return ''
         for i in range(self.__height):
-            for i in range(self.__width):
+            for j in range(self.__width):
                 shape = shape + '#'
             if i < (self.__height - 1):
                 shape = shape + '\n'
@@ -71,7 +71,7 @@ class Rectangle:
             (string): Represenation of the rectangle.
 
         """
-        return ("Rectangle({}, {})".format(
+        return ("Rectangle({:d}, {:d})".format(
             eval(str(self.__width)), eval(str(self.__height))))
 
     @property
