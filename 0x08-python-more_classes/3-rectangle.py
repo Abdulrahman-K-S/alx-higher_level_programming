@@ -1,4 +1,4 @@
-# #!/usr/bin/python3
+#!/usr/bin/python3
 """01. Real definition of a rectangle
 
 This module defines a class Rectangle that has private
