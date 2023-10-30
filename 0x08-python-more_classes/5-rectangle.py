@@ -88,11 +88,11 @@ class Rectangle:
 
     def __del__(self):
         """del
-        
+
         The default class deconstructor.
+
         """
         print("Bye rectangle...")
-
 
     @width.setter
     def width(self, value):
