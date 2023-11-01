@@ -1,5 +1,7 @@
 # <p align='center'>0x06. Python - Classes and Objects</p>
 
+![image](https://github.com/Bebo-K-S/alx-higher_level_programming/assets/107813045/00f3c739-7fc3-4e11-b15b-df9de8f0d985)
+
 <br>
 
 # Table of Contents
