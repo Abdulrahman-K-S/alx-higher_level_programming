@@ -1,14 +1,12 @@
 #!/usr/bin/python3
 '''
 Module to over-write the content of the files and
-return the number of lines overwritten.
+return the number of characters overwritten.
 '''
 
 
-def number_of_lines(filename=""):
-    ''' function that returns the number of lines of a text file '''
-    with open(filename) as f:
-        i = 0
-        for line in enumerate(f):
-            i += 1
-    return i
+def write_file(filename="", text=""):
+    ''' function that writes a string to a text file (UTF8)
+    and returns the number of characters written'''
+    with open(filename, mode='w', encoding='utf-8') as f:
+        return f.write(text)
