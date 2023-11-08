@@ -3,12 +3,14 @@
 
 
 class MyInt(int):
-    ''' MyInt is a rebel. MyInt has == and
-        != operators inverted
+    '''class MyInt
+
+    MyInt is a rebel. MyInt has == and
+    != operators inverted
     '''
     def __init__(self, number):
         '''The MyInt class constructor'''
-            self.number = number
+        self.number = number
 
     def __eq__(self, other):
         '''__eq__
