@@ -1,10 +1,20 @@
 #!/usr/bin/python3
-BaseGeometry = __import__('7-base_geometry').BaseGeometry
+'''
+Rectangle module inhearted to the Square class
+'''
+
+
 Rectangle = __import__('9-rectangle').Rectangle
 
 
 class Square(Rectangle):
+    '''class Square
+
+    Attributes:
+        __size (int): The size of the square.
+    '''
     def __init__(self, size):
+        '''The Square class constructor'''
         self.integer_validator("size", size)
         super().__init__(size, size)
         self.__size = size
