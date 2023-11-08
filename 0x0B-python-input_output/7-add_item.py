@@ -5,20 +5,17 @@ and then save them to a file
 '''
 
 
-import sys
+from os import path
+from sys import argv
+save_to_json_file = __import__('7-save_to_json_file').save_to_json_file
+load_from_json_file = __import__('8-load_from_json_file').load_from_json_file
 
+if path.exists('add_item.json'):
+    obj_json_file = load_from_json_file('add_item.json')
+else:
+    obj_json_file = []
 
-save_file = __import__('7-save_to_json_file').save_to_json_file
-load_file = __import__('8-load_from_json_file').load_from_json_file
-my_list = []
-try:
-    tmp_list = load_file("add_item.json")
-    my_list = tmp_list
-except Exception as e:
-    pass
+for i in range(1, len(argv)):
+    obj_json_file.append(argv[i])
 
-length = len(sys.argv)
-for i in range(1, length):
-    my_list.append(sys.argv[i])
-
-my_list = save_file(my_list, "add_item.json")
+save_to_json_file(obj_json_file, 'add_item.json')
