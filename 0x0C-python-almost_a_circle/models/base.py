@@ -4,7 +4,7 @@
 
 class Base():
     """class Base
-    
+
     Attributes:
         __nb_objects (int): An incrementer of how many instances
                             there is.
