@@ -107,3 +107,13 @@ class Rectangle(Base):
             raise ValueError("{} must be > 0".format(param))
         if value < 0 and param in ('x', 'y'):
             raise ValueError("{} must be >= 0".format(param))
+
+    def area(self):
+        """area
+
+        Returns the area of the rectangle.
+
+        Returns:
+            (int): The area of the rectangle.
+        """
+        return self.width * self.height
