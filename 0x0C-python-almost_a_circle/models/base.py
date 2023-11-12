@@ -40,5 +40,27 @@ class Base():
                    its not None otherwise []
         """
         if list_dictionaries is None:
-            return []
+            return '[]'
         return json.dumps(list_dictionaries)
+
+    @classmethod
+    def save_to_file(cls, list_objs):
+        """save_to_file
+
+        Saves the instances of the objects in a file.
+
+        Attributes:
+            cls (obj): The class.
+            list_objs (list): A list of object instances. Either a
+                              list of Rectangle or Square classes.
+        """
+        filename = "{}.json".format(cls.__name__)
+        list_attributes = []
+
+        with open(filename, 'w', encoding='utf-8') as f:
+            if list_objs is None:
+                return f.write(cls.to_json_string(None))
+
+            for elem in list_objs:
+                list_attributes.append(elem.to_dictionary())
+            return f.write(cls.to_json_string(list_attributes))
