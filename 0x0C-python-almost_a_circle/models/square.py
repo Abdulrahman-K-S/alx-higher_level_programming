@@ -66,8 +66,8 @@ class Square(Rectangle):
         Returns a dictionary of the Square class.
         """
         return ({
-            'id' : self.id,
-            'size' : self.size,
-            'x' : self.x,
-            'y' : self.y
+            'id': self.id,
+            'size': self.size,
+            'x': self.x,
+            'y': self.y
         })
