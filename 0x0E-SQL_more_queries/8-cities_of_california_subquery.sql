@@ -8,5 +8,7 @@ FROM
 	citites AS c
 WHERE
 	s.id = c.id
+	AND
+	c.name = 'California'
 ORDER BY
       c.id DESC
