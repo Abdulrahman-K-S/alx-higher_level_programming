@@ -4,5 +4,5 @@
 -- 	 - name VARCHAR(256)
 CREATE TABLE if not exists unique_id(
        id INT DEFAULT 1 UNIQUE,
-       'name' VARCHAR(256)
+       'name' VARCHAR(256) NOT NULL
 );
