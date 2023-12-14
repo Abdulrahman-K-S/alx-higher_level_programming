@@ -29,6 +29,11 @@ Some scripts need more specific requirements, but these will be shown where they
 - [0x07. Python - Test-driven development](0x07-python-test_driven_development)
 - [0x08. Python - More Classes and Objects](0x08-python-more_classes)
 - [0x09. Python - Everything is object](0x09-python-everything_is_object)
+- [0x0A. Python - Inheritance](0x0A-python-inheritance)
+- [0x0B. Python - Input/Output](0x0B-python-input_output)
+- [0x0C. Python - Almost a circle](0x0C-python-almost_a_circle)
+- [0x0D. SQL - Introduction](0x0D-SQL_introduction)
+- [0x0E. SQL - More queries](0x0E-SQL_more_queries)
 
 ## Usage
 Each project and task contains the instructions to compile the code and execute the results.
