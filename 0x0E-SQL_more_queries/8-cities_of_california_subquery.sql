@@ -4,11 +4,13 @@ SELECT
 	id,
 	name
 FROM
-	states AS s,
-	citites AS c
+	cities
 WHERE
-	s.id = c.id
-	AND
-	c.name = 'California'
-ORDER BY
-      c.id DESC
+	state_id = (
+        	 SELECT
+			id
+        	 FROM
+			states
+        	 WHERE
+			name = 'California'
+    		 );
