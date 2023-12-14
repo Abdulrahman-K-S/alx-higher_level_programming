@@ -6,6 +6,6 @@ FROM
 	tv_shows AS shows,
 	tv_show_genres AS genres
 WHERE
-	shows.id = genres.genre_id
+	shows.id = genres.show_id
 ORDER BY
       shows.title, genres.genre_id ASC
