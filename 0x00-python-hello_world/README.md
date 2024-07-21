@@ -65,7 +65,7 @@ Read or watch:
 ## Concepts
 For this project, we expect you to look at this concept:
 
-- [Python programming](https://intranet.alxswe.com/concepts/550)
+- [Python programming](../Concepts/Python%20programming.md)
 
 ## Requirements
 
